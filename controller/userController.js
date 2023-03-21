@@ -72,7 +72,7 @@ exports.userLogin = async (req, res) => {
       },
       process.env.JWT_SECRET,
       {
-        expiresIn: "3m",
+        expiresIn: process.env.JWT_EXP,
       }
     );
 
@@ -428,3 +428,5 @@ exports.getFarmDivisions = (req, res) => {
 
   res.json(farmDivisions);
 };
+
+exports.DeleteOrder
