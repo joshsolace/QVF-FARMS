@@ -12,11 +12,10 @@ app.use(express.json());
 connectDb();
 
 app.get("/", (req, res) => {
-    res.send("WELCOME TO QVF FARMS");
+  res.send("WELCOME TO QVF FARMS.");
 });
 
 app.use("/api/v1/users", userRoutes);
-
 
 // export app
 module.exports = app;
