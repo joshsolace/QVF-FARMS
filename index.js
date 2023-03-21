@@ -1,13 +1,7 @@
-const app = require("./app");
+const app = require("./app.js");
 
+const port = process.env.PORT || 5000;
 
-
-app.get("/", (req, res) => {
-    res.send("WELCOME TO QVF FARMS");
+app.listen(port, () => {
+  console.log(`Server runing on localhost:${port}`);
 });
-
-port = process.env.port
-
-app.listen(port, ()=>{
-    console.log(`Server runing on localhost:${port}`);
-})
