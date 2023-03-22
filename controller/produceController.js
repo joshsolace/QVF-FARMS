@@ -1,3 +1,5 @@
+const Produce = require("../models/produceModel");
+
 exports.createProduce = async (req, res) => {
     const { name, category, price, stock } = req.body;
     // Check if the new produce already exists

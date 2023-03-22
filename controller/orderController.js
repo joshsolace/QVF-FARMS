@@ -1,3 +1,6 @@
+const Order = require("../models/orderModel")
+
+
 exports.createOrder = async (req, res) => {
     try {
       const { name, category, price, quantity } = req.body;
