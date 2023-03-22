@@ -120,7 +120,7 @@ exports.createProduce = async (req, res) => {
         },
         {
           "name": "Livestock Feeds",
-          "description": "QVF Farms produces high-quality feed for a variety of livestock, including cattle, poultry, and swine.",
+          "description": "QVF Farms produces high-quality feed for a variety of livestock, including cattle, poultry, and swine..",
           "url": "https://qvf-farms.herokuapp.com/api/v1/livestock-feeds"
         }
       ]
