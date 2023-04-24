@@ -79,7 +79,7 @@ exports.userLogin = async (req, res) => {
       httpOnly: true,
       secure: true,
       sameSite: "strict",
-      maxAge: 1000 * 60 * 3, // 3 minutes
+      maxAge: 1000 * 60 * 20, // 3 minutes
     });
 
     return res.status(200).json({
